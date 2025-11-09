@@ -1,39 +1,18 @@
 #!/bin/bash
 set -euo pipefail
 
-# -------------------------
-# Color Definitions
-# -------------------------
-RED='\e[31m'
-GREEN='\e[32m'
-YELLOW='\e[33m'
-BLUE='\e[34m'
-CYAN='\e[36m'
-RESET='\e[0m'
-
-# -------------------------
-# Animate Logo
-# -------------------------
-animate_logo() {
-  clear
-  local logo=(
-    ____  __    _____  ______  ____  _____   ________
+clear
+cat << "EOF"
+================================================
+       ____  __    _____  ______  ____  _____   ________
    / __ \/ /   /   \ \/ / __ \/ __ \/  _/ | / /_  __/
   / /_/ / /   / /| |\  / /_/ / / / // //  |/ / / /   
  / ____/ /___/ ___ |/ / ____/ /_/ // // /|  / / /    
 /_/   /_____/_/  |_/_/_/    \____/___/_/ |_/ /_/     
-                                                     
-  
-# BLUEPRINT ðŸ’™ installation script - Auto Installer Made by <3 8rx (FOUNDER OF PLAYPOINT)
-)
-  
-  for line in "${logo[@]}"; do
-    echo -e "${CYAN}${line}${RESET}"
-    sleep 0.2
-  done
-  echo ""
-  sleep 0.5
-}
+                                                                  
+              POWERED BY BLUEPRINT ™
+================================================
+EOF
 
 
 # Tested on Ubuntu/Debian
